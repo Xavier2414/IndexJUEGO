@@ -70,7 +70,7 @@ var Player = class Player {
   }
 }
 
-Player.prototype.size = new Vec(0.8, 1.5);
+Player.prototype.size = new Vec(1, 1);
 
 var Lava = class Lava {
   constructor(pos, speed, reset) {

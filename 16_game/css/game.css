@@ -1,9 +1,17 @@
+body{
+  background: #FDB731;
+  position: absolute;
+  top: 150;
+  
+}
+
 .background    { 
-                background-image: url(https://i.pinimg.com/originals/f6/b3/10/f6b3107916c0fa4836bd6c05446b6ea7.png);
+                background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/146464531/original/8c5628fb166d24655c9c1b87ef1d403c2a7f8f24/create-vector-2d-game-background-for-your-game.png);
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background-image: url(../../fotos/lava.png); }
+.lava          { 
+  background-image: url(../../fotos/lava.png); }
 .wall          { 
   background-image: url(../../fotos/block.png);}
 
@@ -14,7 +22,7 @@
 }
 .player {
   position: absolute; 
-  background-image: url(../../fotos/Webp.net-resizeimage.jpg); }
+  background-image: url(../../fotos/player.png); }
 
 .game {
   overflow: hidden;
@@ -27,9 +35,11 @@
   background: rgb(160, 64, 64);
 }
 .won .player {
-  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+  box-shadow: -1px -3px 5px white, 1px -3px 5px white;
 }
 
 button{
-  
+height: 30px;
+width: 60px;
+background-color: #FDB731;
 }
