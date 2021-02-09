@@ -1,12 +1,12 @@
 body{
-  background: #FDB731;
+  background: #3b83bd;
   position: absolute;
   top: 150;
   
 }
 
 .background    { 
-                background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/146464531/original/8c5628fb166d24655c9c1b87ef1d403c2a7f8f24/create-vector-2d-game-background-for-your-game.png);
+                background-image: url(https://image.freepik.com/vector-gratis/fondo-juego-montana_22191-30.jpg);
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
@@ -34,12 +34,26 @@ body{
   background: rgb(160, 64, 64);
 }
 .won .player {
-  box-shadow: -1px -3px 5px white, 1px -3px 5px white;
+  box-shadow: -3px -px 5px white, 1px -3px 5px white;
   border-radius: 50%;
 }
 
 button{
-height: 30px;
-width: 60px;
-background-color: #FDB731;
+height: 60px;
+width: 180px;
+background-color: #3b83bd;
+position: relative;
+line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border: 2px solid #FDB731;
+  text-align: center;
+  transition: all .35s
+}
+
+button:hover{
+  color: #FDB731;
+}
+button:hover:after{
+  width: 100%;
 }
