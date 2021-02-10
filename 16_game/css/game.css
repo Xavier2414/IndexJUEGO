@@ -39,3 +39,34 @@ body{
   border-radius: 50%;
 }
 
+.footer{
+  display: flex;
+justify-content: center;
+}
+button{
+  background-color: #3b83bd;
+  position: relative;
+width: 250px;
+height: 40px;
+line-height: 40px;
+font-size: 18px;
+font-family: sans-serif;
+text-decoration: none;
+color: #FDB731;
+border: 2px solid #FDB731;
+letter-spacing: 2px;
+text-align: center;
+transition: all .35s;
+
+}
+button:hover{
+  color: #BD0034;
+}
+button:hover:after{
+  width: 100%;
+}
+h1{
+  text-align: center;
+  color: #FDB731;
+  font-family: sans-serif;
+}
