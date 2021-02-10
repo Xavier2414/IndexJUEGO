@@ -31,7 +31,8 @@ body{
 }
 
 .lost .player {
-  background: rgb(160, 64, 64);
+  position: absolute;
+  background-image: url(../../fotos/muerte.png);
 }
 .won .player {
   box-shadow: -3px -px 5px white, 1px -3px 5px white;
