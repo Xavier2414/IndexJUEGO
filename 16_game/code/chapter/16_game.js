@@ -70,7 +70,7 @@ var Player = class Player {
   }
 }
 
-Player.prototype.size = new Vec(1, 1);
+Player.prototype.size = new Vec(0.8, 1);
 
 var Lava = class Lava {
   constructor(pos, speed, reset) {
@@ -349,11 +349,30 @@ function runLevel(level, Display) {
   });
 }
 
-async function runGame(plans, Display) {
-  for (let level = 0; level < plans.length;) {
+async function runGame (plans, Display)
+{
+   let lives = 3;
+  for (let level = 0; level < plans.length;)
+  {
+     console.log('lives:', lives);
     let status = await runLevel(new Level(plans[level]),
                                 Display);
-    if (status == "won") level++;
+    if (status == "won")
+    {
+      level++;
+    } else
+    {
+        lives -= 1;
+        if (lives === 0) {
+          break;
+        }
+      } ;
   }
-  console.log("You've won!");
+  if (lives > 0) { 
+    console.log("You've won!"); }
+  else {
+    console.log("You're dead!");
+    return runGame;
+    }
+
 }

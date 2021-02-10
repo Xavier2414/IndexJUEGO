@@ -39,22 +39,3 @@ body{
   border-radius: 50%;
 }
 
-button{
-height: 60px;
-width: 180px;
-background-color: #3b83bd;
-position: relative;
-line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  border: 2px solid #FDB731;
-  text-align: center;
-  transition: all .35s
-}
-
-button:hover{
-  color: #FDB731;
-}
-button:hover:after{
-  width: 100%;
-}
