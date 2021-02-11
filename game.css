@@ -11,17 +11,17 @@ body{
                  border-spacing: 0;   }
 .background td { padding: 0;          }
 .lava          { 
-  background-image: url(../../fotos/lava.png); }
+  background-image: url(fotos/lava.png); }
 .wall          { 
-  background-image: url(../../fotos/block.png);}
+  background-image: url(fotos/block.png);}
 
 .actor  { position: absolute;  }
 .coin {
   position: absolute;
-  background-image: url(../../fotos/coin.png);
+  background-image: url(fotos/coin.png);
 }
 .player {
-  background-image: url(../../fotos/player.png); }
+  background-image: url(fotos/player.png); }
 
 .game {
   overflow: hidden;
@@ -32,7 +32,7 @@ body{
 
 .lost .player {
   position: absolute;
-  background-image: url(../../fotos/muerte.png);
+  background-image: url(fotos/muerte.png);
 }
 .won .player {
   box-shadow: -3px -px 5px white, 1px -3px 5px white;
