@@ -379,6 +379,7 @@ function runLevel(level, Display) {
 
 async function runGame (plans, Display)
 {
+  //las vidas del jugador
    let lives = 3;
   for (let level = 0; level < plans.length;)
   {
@@ -391,22 +392,45 @@ async function runGame (plans, Display)
     } else
     {
         lives -= 1;
+        Swal.fire({
+          title: 'te Quemaste',
+          text: 'Intentalo de nuevo',
+          icon: 'warning',
+          confirmButtonText: 'Volver a intentar'
+        })
         if (lives === 0) {
           break;
         }
       } ;
   }
   if (lives > 0) { 
-    console.log("You've won!"); }
+    Swal.fire({
+      title: 'Ganaste',
+      width: 600,
+      padding: '3em',
+      background: '#fff url(/images/trees.png)',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("/images/nyan-cat.gif")
+        left top
+        no-repeat
+      `
+    })}
   else {
-    console.log("You're dead!");
-    return runGame;
+    Swal.fire({
+      title: 'Perdiste',
+      text: 'Tendras de volver a empezar',
+      icon: 'error',
+      confirmButtonText: 'Volver a Empezar'
+      
+    })
+    runGame (plans, Display);
     }
 
 }
 
 
-
+//Monstruo para el mapa final
 var Monster=class Monster {
   constructor(pos, speed, chase) {
     this.pos = pos;
